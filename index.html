@@ -141,6 +141,22 @@ footer {
         margin-bottom: 25px; 
     }
 }
+@media (max-width: 768px) {
+    /* 메인 비주얼 제목 수정 */
+    .hero h1 { 
+        font-size: 1.6rem !important; /* 글자 크기를 더 줄임 */
+        white-space: nowrap;         /* 절대 줄바꿈 되지 않게 설정 */
+        letter-spacing: -1px;        /* 자간을 좁혀서 한 줄에 쏙 들어가게 함 */
+        padding: 0 10px; 
+    }
+    
+    .hero p { 
+        font-size: 0.9rem;          /* 보조 설명 글자도 비례해서 줄임 */
+        word-break: keep-all;       /* 단어 단위로 줄바꿈 */
+    }
+
+    /* 기존에 드렸던 사업개요 박스 최적화 코드도 여기에 함께 있으면 좋습니다 */
+}
        /* 유튜브 반응형 박스 */
 .video-container {
     position: relative;
