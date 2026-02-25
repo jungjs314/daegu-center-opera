@@ -242,6 +242,40 @@ footer {
         height: 300px; /* 모바일 버전 높이 */
     }
 }
+/* 카카오톡 버튼 스타일 */
+.kakao-float-btn {
+    position: fixed;
+    right: 20px;
+    bottom: 80px; /* 하단 전화 버튼 위에 떠 있도록 설정 */
+    width: 55px;
+    height: 55px;
+    background-color: #FEE500;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+    transition: transform 0.3s;
+}
+
+.kakao-float-btn:hover {
+    transform: scale(1.1);
+}
+
+.kakao-float-btn img {
+    width: 30px;
+    height: 30px;
+}
+
+/* 모바일에서는 조금 더 작게 조절 */
+@media (max-width: 768px) {
+    .kakao-float-btn {
+        width: 50px;
+        height: 50px;
+        bottom: 75px; /* 모바일 하단바 높이에 맞춰 조정 */
+    }
+}
     </style>
 </head>
 <body>
@@ -390,7 +424,9 @@ footer {
 <a href="tel:010-3121-8625" class="mobile-footer-call">
     📞 전화상담 및 방문예약
 </a>
-
+<a href="https://pf.kakao.com/_xxxxxx" class="kakao-float-btn" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/KakaoTalk_logo.svg" alt="카톡상담">
+</a>
     <footer style="height: 100px; background:#333; color:#777; font-size: 0.8rem; text-align:center; padding-top:20px;">
         &copy; 2026 대구역 센트레빌 더 오페라 홍보관. All rights reserved.
     </footer>
